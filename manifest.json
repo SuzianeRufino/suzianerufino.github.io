@@ -3,7 +3,7 @@
     "description" : "Progressive Web App",
     "theme_color" : "green",
     "background_color": "green",
-    "start_url" : "https://localhost/pwa/",
+    "start_url" : "https://suzianerufino.github.io/",
     "display" : "standalone",
     "lang" : "Portuguese",
     "icons": [
