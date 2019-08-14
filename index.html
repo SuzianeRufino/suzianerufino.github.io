@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PWA">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="green">
+    <link rel='manifest' href='./manifest.json'>
+    <link rel="icon" sizes="192x192" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="./assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.info('SW registrado!', reg))
+                .catch(err => console.info('Erro', err))
+        } else {
+            console.log("Service Worker não é suportado");
+        }
+    </script>
+    <div class="Texto">
+        <title>PWA</title>
+        <h1>PWA</h1>
+        <h2>Progressive Web App</h2>
+    </div>
+</body>
+
+</html>
